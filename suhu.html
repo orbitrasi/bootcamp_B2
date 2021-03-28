@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Konversi Suhu</title>
+	</head>
+
+	<body>
+		<form id="form" onsubmit="return false">
+			<label>Input Suhu</label>
+			<input type="number" name="angka">
+			<br>
+			<label>Dari Suhu</label>
+			<select id="dari">
+				<option value="Celsius">Celsius</option>
+				<option value="Fahrenheit">Fahrenheit</option>
+				<option value="Kelvin">Kelvin</option>
+				<option value="Reamur">Reamur</option>
+			</select>
+			<br>
+			<label>Ke Suhu</label>
+			<select id="ke">
+				<option value="Celsius">Celsius</option>
+				<option value="Fahrenheit">Fahrenheit</option>
+				<option value="Kelvin">Kelvin</option>
+				<option value="Reamur">Reamur</option>
+			</select>
+			<br>
+			<button type="submit" onclick="konversi()">Konversi</button>
+		</form>
+
+		<p id="hasil"></p>
+
+		<script src="suhu.js"></script>
+	</body>
+</html>
